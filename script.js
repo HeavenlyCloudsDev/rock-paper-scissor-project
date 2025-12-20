@@ -1,8 +1,17 @@
-WRITE the logic to get the computer choice
-WRITE the logic to get the human choice
-DECLARE the players score variables
-WRITE the logic to play a single round
-WRITE the logic to play the entire game
+// What is the problem? 
+
+// Create a game that allows computer to give a result randomly
+// This result is given when the player picks their choice.Create
+
+// WRITE the logic for the computers choice
+//     CREATE choices for the computer
+//     MAKE the choices random each time 
+//     SHOW the computers choice at the same time the user chooses theirs
+
+const computerChoices = ["rock", "paper", "scissors"];
+const randomIndex = Math.floor(Math.random() * computerChoices.length);
+const computerGuess = computerChoices[randomIndex];
 
 
-// make sure to break these down even smaller
+console.log(computerGuess);
+
