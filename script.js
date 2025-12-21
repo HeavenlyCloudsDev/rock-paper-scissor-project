@@ -7,13 +7,13 @@
 
 
 function getComputerChoice() {
-    let randomIndex = Math.floor(Math.random() * 3);
+    let computerChoice = Math.floor(Math.random() * 3);
 
-    if (randomIndex === 0) {
+    if (computerChoice === 0) {
         return "Rock";
-    } else if (randomIndex === 1) {
+    } else if (computerChoice === 1) {
         return "Paper";
-    } else (randomIndex === 2) 
+    } else (computerChoice === 2) 
         return "Scissors";
     }
 
@@ -29,10 +29,14 @@ function getComputerChoice() {
 //TEST 3 the getHumanChoice function is still not working properly, it always returns Rock
 //TEST 4 successful!
 
+
 function getHumanChoice() {
-    prompt("Rock,Paper, or Scissors?");
+    let humanChoice = prompt("Rock,Paper, Scissors?");
+    return humanChoice;
+    //removed everything and inside of the function I assigned human choice to the prompt and asked it to return it in the console.log
 }
-    console.log(prompt(""));
+
+console.log(getHumanChoice());
 
 
 // DECLARE the player score variables
@@ -41,9 +45,13 @@ function getHumanChoice() {
 
 
 
-const humanScore = "Your Score:" + 0;
-const computerScore = "Their Score:" + 0;
+const humanScore = 0;
+const computerScore = 0;
 
 console.log(humanScore);
 console.log(computerScore);
+
+//changed the name in the first code block from randomIndex to computerChoice, made more sense.
+
+
 
